@@ -10,3 +10,6 @@ To earn this credential, I am focusing on the core pillars:
 - **Language:** Python 3.14.0
 - **Testing:** Unit Testing (Pytest/Unittest) assisted by GitHub Copilot.
 - **Standards:** Clean Code (PEP 8) and Test-Driven Development (TDD) principles.
+
+---
+*“Preparation is the key to success.”* — [My HackerRank Profile](https://www.hackerrank.com/profile/longlh2work)
