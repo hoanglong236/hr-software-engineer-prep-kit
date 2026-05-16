@@ -1,4 +1,4 @@
-# [Merge and Sort Intervals]
+# Merge and Sort Intervals
 
 ## 💡 Intuition & Approach
 We sort the intervals by their start times to establish a predictable timeline. We then iterate through the sorted list, comparing each interval with the last merged interval in our results list. Because the input is sorted, we only need to check if the current interval's start time is less than or equal to the last merged interval's end time. If it is, they overlap, and we merge them by extending the end boundary. Otherwise, they are disjoint, and we append the current interval as a new entry.

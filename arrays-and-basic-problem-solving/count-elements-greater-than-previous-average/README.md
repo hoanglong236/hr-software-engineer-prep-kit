@@ -1,4 +1,4 @@
-# [Count Elements Greater Than Previous Average]
+# Count Elements Greater Than Previous Average
 
 ## 💡 Intuition & Approach 
 > Instead of recalculating the average at every step (which would be $O(n^2)$), I implemented a **prefix sum** approach. This allows us to determine the average of all previous elements in constant time $O(1)$ during a single traversal.
