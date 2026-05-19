@@ -22,11 +22,7 @@ When a wall is hit, we instantly reset tracking by clearing the hash map and shi
 ### 💡 Intuition & Approach
 This solution uses `.split('*')` to isolate clean session segments, tracking each character's last seen index inside a fixed-size array of size 26.
 
-Instead of tracking a left-boundary pointer variable, it relies on elegant relative-distance mathematics. If the distance between the current index `i` and the character's last seen index is strictly greater than `window_size`:
-
-$$i - \text{indices}[o] > \text{window\_size}$$
-
-The previous duplicate is mathematically guaranteed to sit outside the current active window. This allows `window_size` to safely expand without triggering a false collision.
+Rely on relative-distance mathematics. If the distance between the current index `i` and the character's last seen index is strictly greater than `window_size`, the previous duplicate is mathematically guaranteed to sit outside the current active window. This allows `window_size` to safely expand without triggering a false collision.
 
 ### 📊 Complexity Analysis
 | Type | Complexity | Justification |
