@@ -1,11 +1,13 @@
 import unittest
 from solution_s0 import Solution as SolutionS0
+from solution_s1 import SolutionS1
 
 
 class TestSolution(unittest.TestCase):
     def setUp(self):
         self.solutions = [
             SolutionS0(),
+            SolutionS1(),
         ]
 
     def _execute_test(self, s, expected):
@@ -42,6 +44,13 @@ class TestSolution(unittest.TestCase):
         # Session 2: "xyz" -> max unique is "xyz" (3)
         self._execute_test("abcb*xyz", 3)
 
+    def test_duplicate_within_same_session(self):
+        # HackerRank's missing test case: "abcad" -> max unique is "bcad" (4)
+        self._execute_test("abcad", 4)
+
+    def test_duplicate_outside_active_window(self):
+        # HackerRank's missing test case: "abba" -> max unique is "ab" or "ba" (2)
+        self._execute_test("abba", 2)
 
 if __name__ == "__main__":
     unittest.main()
