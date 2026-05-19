@@ -24,7 +24,7 @@ This solution uses `.split('*')` to isolate clean session segments, tracking eac
 
 Instead of tracking a left-boundary pointer variable, it relies on elegant relative-distance mathematics. If the distance between the current index `i` and the character's last seen index is strictly greater than `window_size`:
 
-$$i - \text{indices}[o] > \text{window\_size}$$
+$$i - \text{indices}[o] > \text{window}_\text{size}$$
 
 The previous duplicate is mathematically guaranteed to sit outside the current active window. This allows `window_size` to safely expand without triggering a false collision.
 
