@@ -11,11 +11,10 @@
 
 ## 🛠️ Technical Details
 - **Pattern:** [e.g., Stack, Two Pointers, Sliding Window, Greedy]
+- **Edge Cases Handled:**
+    - [Edge Case 1]
+    - [Edge Case 2]
 
-## 🧪 Testing & Edge Cases
+## 🧪 Testing
 This problem is verified using a suite of unit tests following the **AAA (Arrange-Act-Assert)** pattern.
 - `test_solution.py`: Contains standard, edge, and boundary test cases.
-
-**Edge Cases Handled:**
-- [Edge Case 1]
-- [Edge Case 2]
