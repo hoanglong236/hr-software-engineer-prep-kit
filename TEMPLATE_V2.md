@@ -5,10 +5,13 @@
 ### 🚀 Quick Comparison Matrix
 | Solutions & Approaches | Time | Space |
 | :--- | :--- | :--- |
-| Solution 0: [Technique Name] | $O(n)$ | $O(n)$ |
-| Solution 1: [Technique Name] | $O(n)$ | $O(n)$ |
+| **s0:** [Technique 1 Name] | $O(n)$ | $O(n)$ |
+| **s1:** [Technique 2 Name] | $O(n)$ | $O(n)$ |
 
-### 1. Solution 0: [Technique Name]
+---
+
+### 1. [Technique 1 Name]
+
 #### 💡 Intuition & Approach
 [Describe the core logic, the chosen data structure, and why this approach works.]
 
@@ -19,7 +22,8 @@
 - **Time** $O(n)$: [Why?]
 - **Space** $O(n)$: [Why?]
 
-### 2. Solution 1: [Technique Name]
+### 2. [Technique 2 Name]
+
 #### 💡 Intuition & Approach
 [Describe the core logic, the chosen data structure, and why this approach works.]
 
