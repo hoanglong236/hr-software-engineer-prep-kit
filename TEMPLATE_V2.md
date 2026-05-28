@@ -41,6 +41,6 @@
 This problem is verified using a suite of unit tests following the **AAA (Arrange-Act-Assert)** pattern.
 - `test_solution.py`: Contains standard, edge, and boundary test cases.
 
-### 🛡️ Edge Cases Handled
+### 🛡️ Edge Cases Coverage
 - **[Lower Boundaries]:** [e.g., Empty input, single-element collections, or minimum bounds]
 - **[Algorithmic Traps]:** [e.g., Handling duplicate patterns, out-of-bounds index shifts, or stale state logic]
