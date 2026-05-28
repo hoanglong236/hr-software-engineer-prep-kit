@@ -45,7 +45,7 @@ Rely on relative-distance mathematics. If the distance between the current index
 This problem is verified using a suite of unit tests following the **AAA (Arrange-Act-Assert)** pattern.
 - `test_solution.py`: Contains standard, edge, and boundary test cases.
 
-### 🛡️ Edge Cases Handled
-- **Empty String / Only Asterisks (`****`):** Returns 0 immediately as no valid character window can form.
-- **Active Window Shifts:** Validates that the window correctly shrinks and shifts forward when an active collision occurs.
-- **Out-of-Window Duplicates:** Uses relative distance logic to ignore stale (`s1`), or historical index (`s0`) entries sitting safely behind the active window.
+### 🛡️ Edge Cases Coverage
+- **[Stream Boundaries]:** Assures correct evaluation of empty strings or inputs containing nothing but session walls (`****`), verifying the system defaults to a length of `0` without throwing unexpected exceptions.
+- **[Session Isolation Traps]:** Validates character tracking across multi-session environments separated by hard walls (`*`), ensuring unique window lengths are reset properly and do not bleed into neighboring sessions.
+- **[Window Collision Dynamics]:** Verifies sliding boundaries during close-range duplicates within a single session (e.g., `"abcad"` and `"abba"`), ensuring old index pointers are safely bypassed or updated without breaking window logic.
